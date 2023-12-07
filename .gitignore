@@ -1,9 +1,8 @@
 /*
 !.gitignore
 
-! /auto
-! /auto/*
+!auto/
 
-! /config
-! /config/*
+!config/
+
 
