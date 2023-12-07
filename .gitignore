@@ -1,6 +1,6 @@
 *
 
-! auto/
-! config/
+! auto/*
+! config/*
 !.gitignore
 
