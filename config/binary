@@ -4,7 +4,7 @@
 LB_IMAGE_TYPE="iso-hybrid"
 
 # Set image filesystem
-LB_BINARY_FILESYSTEM="ext4"
+LB_BINARY_FILESYSTEM="fat32"
 
 # Set apt/aptitude generic indices
 LB_APT_INDICES="true"
@@ -80,7 +80,7 @@ LB_ISO_PREPARER="live-build @LB_VERSION@; https://salsa.debian.org/live-team/liv
 LB_ISO_PUBLISHER="Debian Live project; https://wiki.debian.org/DebianLive; debian-live@lists.debian.org"
 
 # Set iso volume (max 32 chars)
-LB_ISO_VOLUME="debian-live-config-4.1.0"
+LB_ISO_VOLUME="ugrach"
 
 # Set jffs2 eraseblock size
 LB_JFFS2_ERASEBLOCK=""
