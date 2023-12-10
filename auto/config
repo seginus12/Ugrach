@@ -8,6 +8,9 @@ lb config noauto \
           --debian-installer-gui true \
 	  --debootstrap-options "--include=apt-transport-https,ca-certificates,openssl" \
           --archive-areas "main contrib non-free non-free-firmware" \
+	  --backports true \
+	  --security true \
+	  --updates true \
           --iso-volume ugrach \
           --clean \
           --color \
