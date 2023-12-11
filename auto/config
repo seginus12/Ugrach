@@ -3,17 +3,23 @@
 set -e
 
 lb config noauto \
+	  --apt-recommends true \
+	  --apt-indices true \
+	  --architectures amd64 \
+          --archive-areas "main contrib non-free non-free-firmware" \
+	  --binary-images iso-hybrid \
+	  --binary-filesystem fat32 \
+          --clean \
+          --color \
           --debian-installer live \
           --debian-installer-distribution bookworm \
           --debian-installer-gui true \
 	  --debootstrap-options "--include=apt-transport-https,ca-certificates,openssl" \
-          --archive-areas "main contrib non-free non-free-firmware" \
-	  --backports true \
+	  --distribution bookworm \
+	  --firmware-binary true \
+	  --firmware-chroot true \
 	  --security true \
-	  --updates true \
           --iso-volume ugrach \
-          --clean \
-          --color \
           --image-name ugrach.beta \
 	  --linux-packages "linux-image linux-headers"
 

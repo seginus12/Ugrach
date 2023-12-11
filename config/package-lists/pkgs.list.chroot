@@ -3,6 +3,9 @@ calamares-settings-debian
 dolphin
 firefox-esr
 konsole
-plasma-workspace
+kde-plasma-desktop
 sddm
 xorg
+git
+libreoffice
+libreoffice-plasma

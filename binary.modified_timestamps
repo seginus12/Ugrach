@@ -2,8 +2,8 @@ d binary
 f binary/efi.img
 d binary/live
 f binary/live/filesystem.squashfs
+f binary/live/initrd.img-6.1.0-15-amd64
 f binary/live/filesystem.packages
-f binary/live/initrd.img
 f binary/md5sum.txt
 f binary/sha256sum.README
 d binary/firmware

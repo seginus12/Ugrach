@@ -1,0 +1,2 @@
+deb http://mirror.yandex.ru/debian bookworm main contrib non-free non-free-firmware
+deb http://mirror.yandex.ru/debian-security bookworm-security main contrib non-free non-free-firmware
