@@ -9,3 +9,6 @@ xorg
 git
 libreoffice
 libreoffice-plasma
+krb5-user
+winbind
+samba

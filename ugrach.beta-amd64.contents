@@ -646,9 +646,9 @@
 /live/filesystem.packages
 /live/filesystem.squashfs
 /live/initrd.img
-/live/initrd.img-6.1.0-15-amd64
+/live/initrd.img-6.1.0-17-amd64
 /live/vmlinuz
-/live/vmlinuz-6.1.0-15-amd64
+/live/vmlinuz-6.1.0-17-amd64
 /md5sum.README
 /md5sum.txt
 /pool
@@ -688,7 +688,7 @@
 /pool/main/c/cryptsetup/cryptsetup-bin_2%3a2.6.1-4~deb12u1_amd64.deb
 /pool/main/c/cryptsetup/cryptsetup-initramfs_2%3a2.6.1-4~deb12u1_all.deb
 /pool/main/c/curl
-/pool/main/c/curl/libcurl3-gnutls_7.88.1-10+deb12u4_amd64.deb
+/pool/main/c/curl/libcurl3-gnutls_7.88.1-10+deb12u5_amd64.deb
 /pool/main/c/cyrus-sasl2
 /pool/main/c/cyrus-sasl2/libsasl2-2_2.1.28+dfsg-10_amd64.deb
 /pool/main/c/cyrus-sasl2/libsasl2-modules-db_2.1.28+dfsg-10_amd64.deb
@@ -825,8 +825,8 @@
 /pool/main/l/linux-base
 /pool/main/l/linux-base/linux-base_4.9_all.deb
 /pool/main/l/linux-signed-amd64
-/pool/main/l/linux-signed-amd64/linux-image-6.1.0-15-amd64_6.1.66-1_amd64.deb
-/pool/main/l/linux-signed-amd64/linux-image-amd64_6.1.66-1_amd64.deb
+/pool/main/l/linux-signed-amd64/linux-image-6.1.0-17-amd64_6.1.69-1_amd64.deb
+/pool/main/l/linux-signed-amd64/linux-image-amd64_6.1.69-1_amd64.deb
 /pool/main/l/lsb
 /pool/main/l/lsb/lsb-base_11.6_all.deb
 /pool/main/l/lvm2

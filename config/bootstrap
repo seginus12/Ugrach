@@ -31,10 +31,10 @@ LB_ARCHIVE_AREAS="main contrib non-free non-free-firmware"
 LB_PARENT_ARCHIVE_AREAS="main contrib non-free non-free-firmware"
 
 # Set parent mirror to bootstrap from
-LB_PARENT_MIRROR_BOOTSTRAP="http://deb.debian.org/debian/"
+LB_PARENT_MIRROR_BOOTSTRAP="http://mirror.yandex.ru/debian/"
 
 # Set parent mirror to fetch packages from
-LB_PARENT_MIRROR_CHROOT="http://deb.debian.org/debian/"
+LB_PARENT_MIRROR_CHROOT="http://mirror.yandex.ru/debian/"
 
 # Set security parent mirror to fetch packages from
 LB_PARENT_MIRROR_CHROOT_SECURITY="http://security.debian.org/"
@@ -46,13 +46,13 @@ LB_PARENT_MIRROR_BINARY="http://deb.debian.org/debian/"
 LB_PARENT_MIRROR_BINARY_SECURITY="http://security.debian.org/"
 
 # Set debian-installer parent mirror
-LB_PARENT_MIRROR_DEBIAN_INSTALLER="http://deb.debian.org/debian/"
+LB_PARENT_MIRROR_DEBIAN_INSTALLER="http://mirror.yandex.ru/debian/"
 
 # Set mirror to bootstrap from
-LB_MIRROR_BOOTSTRAP="http://deb.debian.org/debian/"
+LB_MIRROR_BOOTSTRAP="http://mirror.yandex.ru/debian/"
 
 # Set mirror to fetch packages from
-LB_MIRROR_CHROOT="http://deb.debian.org/debian/"
+LB_MIRROR_CHROOT="http://mirror.yandex.ru/debian/"
 
 # Set security mirror to fetch packages from
 LB_MIRROR_CHROOT_SECURITY="http://security.debian.org/"
@@ -64,7 +64,7 @@ LB_MIRROR_BINARY="http://deb.debian.org/debian/"
 LB_MIRROR_BINARY_SECURITY="http://security.debian.org/"
 
 # Set debian-installer mirror
-LB_MIRROR_DEBIAN_INSTALLER="http://deb.debian.org/debian/"
+LB_MIRROR_DEBIAN_INSTALLER="http://mirror.yandex.ru/debian/"
 
 # Set architectures to use foreign bootstrap
 LB_BOOTSTRAP_QEMU_ARCHITECTURE=""

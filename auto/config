@@ -9,6 +9,7 @@ lb config noauto \
           --archive-areas "main contrib non-free non-free-firmware" \
 	  --binary-images iso-hybrid \
 	  --binary-filesystem fat32 \
+	  ----bootappend-live "boot=live components locales=ru_RU.UTF-8 keyboard-layouts=ru,en"
           --clean \
           --color \
           --debian-installer live \
@@ -21,6 +22,7 @@ lb config noauto \
 	  --security true \
           --iso-volume ugrach \
           --image-name ugrach.beta \
-	  --linux-packages "linux-image linux-headers"
-
+	  --linux-packages "linux-image linux-headers" \
+	  --mirror-bootstrap "http://mirror.yandex.ru/debian/" \
+	  --mirror-chroot "http://mirror.yandex.ru/debian/" \
 "${@}"
