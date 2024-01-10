@@ -9,7 +9,7 @@ lb config noauto \
           --archive-areas "main contrib non-free non-free-firmware" \
 	  --binary-images iso-hybrid \
 	  --binary-filesystem fat32 \
-	  ----bootappend-live "boot=live components locales=ru_RU.UTF-8 keyboard-layouts=ru,en"
+	  --bootappend-live "boot=live components locales=ru_RU.UTF-8 keyboard-layouts=ru,en" \
           --clean \
           --color \
           --debian-installer live \
