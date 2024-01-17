@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+git clone https://github.com/yeyushengfan258/We10XOS-kde.git
+cd We10XOS-kde
+./install.sh
+cd ../
+rm -rf We10XOS-kde
+lookandfeeltool -a com.github.yeyushengfan258.We10XOS-light
