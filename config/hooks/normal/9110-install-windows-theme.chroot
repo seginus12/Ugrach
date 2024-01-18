@@ -7,4 +7,3 @@ cd We10XOS-kde
 ./install.sh
 cd ../
 rm -rf We10XOS-kde
-lookandfeeltool -a com.github.yeyushengfan258.We10XOS-light
