@@ -1,15 +1,24 @@
-calamares
-calamares-settings-debian
 dolphin
 firefox-esr
 konsole
 kde-plasma-desktop
 sddm
 xorg
+vim
 git
+curl
 libreoffice
 libreoffice-plasma
+
+# Packages to for interration with Windows AD
 krb5-user
+libpam-krb5
+libpam-script
 winbind
 samba
-vim
+libnss-winbind
+
+# Packages to for acessing file resourses
+smbclient
+cifs-utils
+nfs-common
