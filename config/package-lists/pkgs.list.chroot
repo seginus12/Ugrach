@@ -10,13 +10,22 @@ curl
 libreoffice
 libreoffice-plasma
 
-# Packages to for interration with Windows AD
-krb5-user
-libpam-krb5
-libpam-script
-winbind
+# Samba and dependencies
+acl
+attr
 samba
+samba-common-bin
+winbind
+libpam-winbind
 libnss-winbind
+krb5-config
+krb5-user
+dnsutils
+python3-setproctitle
+chrony
+
+# Linux authentication through kerberos
+libpam-krb5
 
 # Packages to for acessing file resourses
 smbclient

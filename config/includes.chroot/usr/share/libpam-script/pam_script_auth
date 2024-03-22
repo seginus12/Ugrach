@@ -1,2 +1,0 @@
-# Add user after Kerberos authentication
-id "$PAM_USER" &>/dev/null || useradd -m -s /bin/bash "$PAM_USER"

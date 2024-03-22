@@ -1,4 +1,0 @@
-@include common-auth
-@include common-account
-@include common-session-noninteractive
-session optional pam_mkhomedir.so
