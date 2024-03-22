@@ -3,6 +3,6 @@
 set -e
 
 HOSTNAME=$(hostname)
-sed -i "s/localhost/$HOSTNAME.edu.ugrasu/" /etc/hosts
+sudo sed -i "s/localhost/$HOSTNAME.edu.ugrasu/" /etc/hosts
 
 

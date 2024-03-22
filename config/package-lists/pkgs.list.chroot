@@ -1,14 +1,17 @@
 dolphin
-firefox-esr
+# firefox-esr
 konsole
 kde-plasma-desktop
 sddm
 xorg
 vim
+fish
 git
 curl
-libreoffice
-libreoffice-plasma
+# libreoffice
+# libreoffice-plasma
+# gimp
+# vlc
 
 # Samba and dependencies
 acl
@@ -31,3 +34,6 @@ libpam-krb5
 smbclient
 cifs-utils
 nfs-common
+
+# System
+console-setup
