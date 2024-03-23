@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -e
+
+# Configure /etc/hosts
+HOSTNAME=$(hostname)
+sudo sed -i "s/localhost/$HOSTNAME.edu.ugrasu/" /etc/hosts
+
+# Join to domain
+sudo net ads join -U Администратор
+
+# Start samba and winbind sevices
+sudo systemctl start samba.service
+sudo systemctl enable samba.service
+sudo systemctl start winbind.service
+sudo systemctl enable winbind.service
+

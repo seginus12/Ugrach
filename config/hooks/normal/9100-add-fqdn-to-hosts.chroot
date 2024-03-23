@@ -1,8 +1,0 @@
-#!/bin/sh
-
-set -e
-
-HOSTNAME=$(hostname)
-sudo sed -i "s/localhost/$HOSTNAME.edu.ugrasu/" /etc/hosts
-
-
