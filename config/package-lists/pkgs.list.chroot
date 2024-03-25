@@ -37,3 +37,5 @@ nfs-common
 
 # System
 console-setup
+
+# Debian installer

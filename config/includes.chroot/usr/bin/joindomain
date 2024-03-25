@@ -15,3 +15,6 @@ sudo systemctl enable samba.service
 sudo systemctl start winbind.service
 sudo systemctl enable winbind.service
 
+# Enable pam profiles
+sudo pam-auth-update --enable krb5 unix winbind systemd mkhomedir --force
+

@@ -1,5 +1,0 @@
-#!/bin/bash
-
-set -e
-
-sudo pam-auth-update --enable krb5 unix winbind systemd mkhomedir --force
