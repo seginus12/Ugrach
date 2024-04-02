@@ -9,12 +9,10 @@ sudo sed -i "s/localhost/$HOSTNAME.edu.ugrasu/" /etc/hosts
 # Join to domain
 sudo net ads join -U Администратор
 
-# Start samba and winbind sevices
-sudo systemctl start samba.service
-sudo systemctl enable samba.service
-sudo systemctl start winbind.service
-sudo systemctl enable winbind.service
+# Enable necessary services
+sudo systemctl enable smbd.service --now
+sudo systemctl enable winbind.service --now
 
 # Enable pam profiles
-sudo pam-auth-update --enable krb5 unix winbind systemd mkhomedir --force
+sudo pam-auth-update --disable krb5 --enable unix winbind systemd mkhomedir --force
 
