@@ -7,12 +7,10 @@ HOSTNAME=$(hostname)
 sudo sed -i "s/localhost/$HOSTNAME.edu.ugrasu/" /etc/hosts
 
 # Join to domain
-sudo net ads join -U Администратор
+# read  -n 1 -p "Введите имя пользователя: " username
+sudo net ads join -U $1
 
 # Enable necessary services
 sudo systemctl enable smbd.service --now
 sudo systemctl enable winbind.service --now
-
-# Enable pam profiles
-sudo pam-auth-update --disable krb5 --enable unix winbind systemd mkhomedir --force
 
