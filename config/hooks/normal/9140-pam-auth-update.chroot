@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+# Enable pam profiles
+sudo pam-auth-update --disable krb5 --enable unix winbind systemd mkhomedir --force
