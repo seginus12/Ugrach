@@ -1,3 +1,5 @@
 #!/bin/bash
 
-xrandr --output $(xrandr | grep -m 1 "connected primary" | awk '{ print $1 }') --auto
+mode=$(xrandr | grep -m 1 "connected primary" | awk '{ print $4 }' | cut -f1 -d "+")
+monitor=$(xrandr | grep -m 1 "connected primary" | awk '{ print $1 }')
+xrandr --output $monitor --mode $mode
