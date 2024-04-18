@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 mode=$(xrandr | grep -m 1 "connected primary" | awk '{ print $4 }' | cut -f1 -d "+")
 monitor=$(xrandr | grep -m 1 "connected primary" | awk '{ print $1 }')

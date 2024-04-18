@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -e
+
+sed -i "s/localhost/$(hostname).edu.ugrasu/g" /etc/hosts

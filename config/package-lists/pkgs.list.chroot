@@ -8,8 +8,6 @@ vim
 fish
 git
 curl
-# libreoffice
-# libreoffice-plasma
 # gimp
 # vlc
 
@@ -38,4 +36,3 @@ nfs-common
 # System
 console-setup
 
-# Debian installer
