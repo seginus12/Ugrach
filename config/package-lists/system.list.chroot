@@ -1,15 +1,31 @@
+### System packages
+## File managers
 dolphin
-# firefox-esr
+
+## Terminal emulators
 konsole
+kitty
+
+## Browsers
+firefox-esr
+
+## Graphical interface
 kde-plasma-desktop
 sddm
 xorg
-vim
+
+## Shells
 fish
+
+## Console text editors
+vim
+nano
+
+## Version control system
 git
+
+## System utilities
 curl
-# gimp
-# vlc
 
 # Samba and dependencies
 acl
@@ -36,3 +52,5 @@ nfs-common
 # System
 console-setup
 
+## Torrent programms
+qbittorent
