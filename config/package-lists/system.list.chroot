@@ -8,6 +8,7 @@ kitty
 
 ## Browsers
 firefox-esr
+yandex-browser-beta
 
 ## Graphical interface
 kde-plasma-desktop
@@ -27,7 +28,7 @@ git
 ## System utilities
 curl
 
-# Samba and dependencies
+## Samba and dependencies
 acl
 attr
 samba
@@ -53,4 +54,4 @@ nfs-common
 console-setup
 
 ## Torrent programms
-qbittorent
+qbittorrent
