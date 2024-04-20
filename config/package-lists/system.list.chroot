@@ -4,10 +4,10 @@ dolphin
 
 ## Terminal emulators
 konsole
-kitty
+#kitty
 
 ## Browsers
-firefox-esr
+#firefox-esr
 yandex-browser-beta
 
 ## Graphical interface
@@ -20,13 +20,23 @@ fish
 
 ## Console text editors
 vim
-nano
 
 ## Version control system
-git
+#git
 
 ## System utilities
 curl
+software-properties-common
+
+## Disk partitioning and info
+partitionmanager
+
+## Sandbox apps
+flatpak
+plasma-discover-backend-flatpak
+
+## Messengers
+telegram-desktop
 
 ## Samba and dependencies
 acl
@@ -50,8 +60,13 @@ smbclient
 cifs-utils
 nfs-common
 
-# System
+## Console setup
 console-setup
 
 ## Torrent programms
-qbittorrent
+#qbittorrent
+
+## Run windows apps
+wine
+lutris
+

@@ -1,19 +1,19 @@
 ## Office
 
 # LibreOffice
-libreoffice
-libreoffice-plasma
-libreoffice-help-ru
-libreoffice-l10n-ru
-myspell-ru
-mythes-ru
-openclipart-libreoffice
-menu
-ttf-mscorefonts-installer
-ttf-staypuft
+#libreoffice
+#libreoffice-plasma
+#libreoffice-help-ru
+#libreoffice-l10n-ru
+#myspell-ru
+#mythes-ru
+#openclipart-libreoffice
+#menu
+#ttf-mscorefonts-installer
+#ttf-staypuft
 
 # PDF
 # pdf viewer
-okular
+#okular
 # pdf merge, split, rotate, convert
-pdfsam
+#pdfsam

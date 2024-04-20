@@ -1,14 +1,18 @@
 ### Media software
+
 ## Video
 # vlc and plugins
-vlc
-vlc-plugin-notify
-vlc-plugin-jack
-vlc-plugin-samba
-vlc-plugin-skins2
-vlc-plugin-video-splitter
-vlc-plugin-visualization
-vlc-plugin-video-output
-vlc-plugin-base
-vlc-plugin-qt
-libdvd-pkg
+#vlc
+#vlc-plugin-notify
+#vlc-plugin-jack
+#vlc-plugin-samba
+#vlc-plugin-skins2
+#vlc-plugin-video-splitter
+#vlc-plugin-visualization
+#vlc-plugin-video-output
+#vlc-plugin-base
+#vlc-plugin-qt
+#libdvd-pkg
+
+## Audio editors
+audacity
