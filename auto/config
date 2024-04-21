@@ -6,7 +6,7 @@ lb config noauto \
 	  --apt-recommends true \
 	  --apt-indices true \
 	  --architectures amd64 \
-          --archive-areas "sid main contrib non-free non-free-firmware" \
+          --archive-areas "main contrib non-free non-free-firmware" \
 	  --binary-images iso-hybrid \
 	  --binary-filesystem fat32 \
 	  --bootappend-live "boot=live components locales=ru_RU.UTF-8 keyboard-layouts=ru,us keyboard-options=grp:alt_shift_toggle timezone=Asia/Yekaterinburg" \

@@ -8,7 +8,7 @@ konsole
 
 ## Browsers
 #firefox-esr
-yandex-browser-beta
+#yandex-browser-stable
 
 ## Graphical interface
 kde-plasma-desktop
@@ -21,22 +21,25 @@ fish
 ## Console text editors
 vim
 
-## Version control system
-#git
-
 ## System utilities
+#wget
 curl
 software-properties-common
+memtest86+
+#if ARCHITECTURES amd64
+#ia32-libs
+#endif
 
 ## Disk partitioning and info
-partitionmanager
+#partitionmanager
 
 ## Sandbox apps
 flatpak
 plasma-discover-backend-flatpak
 
 ## Messengers
-telegram-desktop
+#discord
+#telegram-desktop
 
 ## Samba and dependencies
 acl
@@ -67,6 +70,6 @@ console-setup
 #qbittorrent
 
 ## Run windows apps
-wine
-lutris
+#wine
+#lutris
 

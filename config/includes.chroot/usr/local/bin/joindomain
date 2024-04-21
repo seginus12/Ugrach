@@ -13,5 +13,5 @@ sudo net ads join -U $1
 
 # Enable necessary services
 sudo systemctl enable smbd.service --now
+sudo systemctl enable nmbd.service --now
 sudo systemctl enable winbind.service --now
-
