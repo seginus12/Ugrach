@@ -4,11 +4,11 @@ dolphin
 
 ## Terminal emulators
 konsole
-#kitty
+kitty
 
 ## Browsers
-#firefox-esr
-#yandex-browser-stable
+firefox-esr
+yandex-browser-stable
 
 ## Graphical interface
 kde-plasma-desktop
@@ -22,7 +22,7 @@ fish
 vim
 
 ## System utilities
-#wget
+wget
 curl
 software-properties-common
 memtest86+
@@ -31,7 +31,7 @@ memtest86+
 #endif
 
 ## Disk partitioning and info
-#partitionmanager
+partitionmanager
 
 ## Sandbox apps
 flatpak
@@ -39,7 +39,7 @@ plasma-discover-backend-flatpak
 
 ## Messengers
 #discord
-#telegram-desktop
+telegram-desktop
 
 ## Samba and dependencies
 acl
@@ -63,13 +63,23 @@ smbclient
 cifs-utils
 nfs-common
 
-## Console setup
+## Console utilities
+# Console setup
 console-setup
+duf
 
 ## Torrent programms
-#qbittorrent
+qbittorrent
 
 ## Run windows apps
-#wine
+# wine
+wine
+wine64
+wine64-preloader
+wine64-tools
+winetricks
+wine-binfmt
 #lutris
 
+## Burn ISO files
+xfburn

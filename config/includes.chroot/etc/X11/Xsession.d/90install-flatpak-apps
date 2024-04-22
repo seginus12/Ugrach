@@ -1,5 +1,5 @@
 #!/bin/bash
 
-flatpak install -y flathub com.usebottles.bottles com.bitwarden.desktop com.getpostman.Postman
+flatpak install -y flathub com.usebottles.bottles com.bitwarden.desktop com.getpostman.Postman com.discordapp.Discord
 
 rm "${0}"
