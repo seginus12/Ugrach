@@ -12,8 +12,11 @@ menu
 ttf-mscorefonts-installer
 ttf-staypuft
 
-# PDF
-# pdf viewers
+## PDF
+# okular
 okular
+okular-backend-odp
+okular-backend-odt
+okular-extra-backends
 # pdf merge, split, rotate, convert
 pdfsam
