@@ -67,6 +67,7 @@ nfs-common
 # Console setup
 console-setup
 duf
+htop
 
 ## Torrent programms
 qbittorrent
