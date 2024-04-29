@@ -1,17 +1,89 @@
 #!/bin/bash
 
-set -e
+function help(){
+	echo "This script disigned to join computer to domain"
+	echo "Usage $0 [-u] [-p] [-r] [-w] [-h]"
+	echo "Options:"
+	echo " -u	Specify domain user."
+	echo " -p	Specify domain user's password."
+	echo " -r	Specify domain realm."
+	echo " -w	Specify domain workgroup. Pass these parameter to override current Samba and Kerberos configuration."
+	echo " -h	Display help."
+}
 
-# Configure /etc/hosts
-sed -i "s/.*127.0.0.1.*/127.0.0.1	$(hostname).edu.ugrasu localhost/" /etc/hosts
-sed -i "s/.*127.0.1.1.*/127.0.1.1	$(hostname).edu.ugrasu $(hostname)/" /etc/hosts
-sed -i "0,/::1/ s/.*::1.*/::1	debian.edu.ugrasu localhost ip6-localhost ip6-loopback/" /etc/hosts
+function enable_services(){
+	sudo systemctl enable smbd.service --now
+	sudo systemctl enable nmbd.service --now
+	sudo systemctl enable winbind.service --now
+}
 
-# Join to domain
-# read  -n 1 -p "Введите имя пользователя: " username
-sudo net ads join -U $1
+function configure_hosts(){
+	sudo sed -i "s/.*127.0.0.1.*/127.0.0.1	$(hostname).$1 localhost/" /etc/hosts
+	sudo sed -i "s/.*127.0.1.1.*/127.0.1.1	$(hostname).$1 $(hostname)/" /etc/hosts
+	sudo sed -i "0,/::1/ s/.*::1.*/::1	$(hostname).$1 localhost ip6-localhost ip6-loopback/" /etc/hosts
+}
 
-# Enable necessary services
-sudo systemctl enable smbd.service --now
-sudo systemctl enable nmbd.service --now
-sudo systemctl enable winbind.service --now
+function change_domain_conf(){
+	sudo sed -i "s/.*workgroup.*/	workgroup = $(echo $1 | tr '[:lower:]' '[:upper:]')/" /etc/samba/smb.conf
+	sudo sed -i "s/.*realm.*/	realm = $(echo $2 | tr '[:lower:]' '[:upper:]')/" /etc/samba/smb.conf
+	sudo sed -i "s/.*default_realm.*/	default_realm = $(echo $2 | tr '[:lower:]' '[:upper:]')/" /etc/krb5.conf
+}
+
+unset -v user
+unset -v password
+unset -v realm
+unset -v workgroup
+
+OPTSTRING=":hu:p:c:r:w:"
+while getopts ${OPTSTRING} opt; do
+  case ${opt} in
+    h) help
+	exit 0
+	;;
+    u) user=$OPTARG;;
+    p) password=$OPTARG;;
+    r) realm=$OPTARG;;
+    w) workgroup=$OPTARG;;
+    :)
+      echo "Option -${OPTARG} requires an argument."
+      exit 1
+      ;;
+    ?)
+      echo "Invalid option: -${OPTARG}."
+      exit 1
+      ;;
+  esac
+done
+
+if [ $OPTIND -eq 1 ]; then 
+	help
+	exit 0
+fi
+
+
+if [[ -n "$user" ]] && [[ -n "$realm" ]]; then
+	enable_services;
+	configure_hosts "$realm";
+	if [ -n "$workgroup" ]; then
+		if [ ! -n "$password" ]; then
+			change_domain_conf $workgroup $realm;
+			sudo samba-tool domain join $realm MEMBER -U $user --workgroup $workgroup;
+			exit 0;
+		else
+			change_domain_conf $workgroup $realm;
+			sudo samba-tool domain join $realm MEMBER -U $user --workgroup $workgroup --password $password;
+			exit 0;
+		fi
+	else
+		if [ ! -n "$password" ]; then
+			sudo samba-tool domain join $realm MEMBER -U $user;
+			exit 0;
+		else
+			sudo samba-tool domain join $realm MEMBER -U $user --password $password;
+			exit 0;
+		fi
+	fi
+else
+	echo "You must specify user and realm to join to domain";
+	exit 1;
+fi
