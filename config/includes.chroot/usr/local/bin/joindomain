@@ -40,13 +40,13 @@ unset -v workgroup
 OPTSTRING=":hu:p:c:r:w:"
 while getopts ${OPTSTRING} opt; do
   case ${opt} in
-    h | help) help
+    h ) help
         exit 0
         ;;
-    u | user) user=$OPTARG;;
-    p | password) password=$OPTARG;;
-    r | realm) realm=$OPTARG;;
-    w | workgroup) workgroup=$OPTARG;;
+    u ) user=$OPTARG;;
+    p ) password=$OPTARG;;
+    r ) realm=$OPTARG;;
+    w ) workgroup=$OPTARG;;
     :)
       echo "Option -${OPTARG} requires an argument."
       exit 1
