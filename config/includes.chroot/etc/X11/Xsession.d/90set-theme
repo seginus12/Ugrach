@@ -1,0 +1,4 @@
+#!/bin/bash
+
+lookandfeeltool -a com.github.yeyushengfan258.We10XOS-light
+rm "${0}"

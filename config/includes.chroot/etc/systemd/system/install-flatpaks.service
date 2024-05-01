@@ -1,0 +1,12 @@
+[Unit]
+Description=Install flatpak apps
+After=multi-user.target
+
+[Service]
+User=root
+Group=root
+ExecStart=/usr/bin/bash /usr/local/bin/install-flatpak-apps
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
