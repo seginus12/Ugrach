@@ -1,4 +1,5 @@
 #!/bin/bash
 
 lookandfeeltool -a com.github.yeyushengfan258.We10XOS-light
-rm "${0}"
+echo password | sudo -S systemctl start install-flatpaks.service
+echo password | sudo -S rm -f /etc/X11/Xsession/90set-theme

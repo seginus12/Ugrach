@@ -1,39 +1,39 @@
-### Media software
-
-## Video
-# vlc and plugins
-vlc
-vlc-plugin-notify
-vlc-plugin-jack
-vlc-plugin-samba
-vlc-plugin-skins2
-vlc-plugin-video-splitter
-vlc-plugin-visualization
-vlc-plugin-video-output
-vlc-plugin-base
-vlc-plugin-qt
-libdvd-pkg
-
-## Video recording and streaming
-# OBS studio
-obs-studio
-obs-advanced-scene-switcher
-obs-ashmanix-countdown
-obs-cli
-obs-downstream-keyer
-obs-gradient-source
-obs-move-transition
-obs-plugins
-obs-plugin-looking-glass
-obs-scene-collection-manager
-obs-scene-notes-dock
-obs-source-clone
-obs-source-copy
-obs-transition-table
-
-
-## Video editing
-kdenlive
-
-## Audio editors
-audacity
+#### Media software
+#
+### Video
+## vlc and plugins
+#vlc
+#vlc-plugin-notify
+#vlc-plugin-jack
+#vlc-plugin-samba
+#vlc-plugin-skins2
+#vlc-plugin-video-splitter
+#vlc-plugin-visualization
+#vlc-plugin-video-output
+#vlc-plugin-base
+#vlc-plugin-qt
+#libdvd-pkg
+#
+### Video recording and streaming
+## OBS studio
+#obs-studio
+#obs-advanced-scene-switcher
+#obs-ashmanix-countdown
+#obs-cli
+#obs-downstream-keyer
+#obs-gradient-source
+#obs-move-transition
+#obs-plugins
+#obs-plugin-looking-glass
+#obs-scene-collection-manager
+#obs-scene-notes-dock
+#obs-source-clone
+#obs-source-copy
+#obs-transition-table
+#
+#
+### Video editing
+#kdenlive
+#
+### Audio editors
+#audacity

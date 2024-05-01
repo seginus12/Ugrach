@@ -1,22 +1,22 @@
-## Office
-
-# LibreOffice
-libreoffice
-libreoffice-plasma
-libreoffice-help-ru
-libreoffice-l10n-ru
-myspell-ru
-mythes-ru
-openclipart-libreoffice
-menu
-ttf-mscorefonts-installer
-ttf-staypuft
-
-## PDF
-# okular
-okular
-okular-backend-odp
-okular-backend-odt
-okular-extra-backends
-# pdf merge, split, rotate, convert
-pdfsam
+### Office
+#
+## LibreOffice
+#libreoffice
+#libreoffice-plasma
+#libreoffice-help-ru
+#libreoffice-l10n-ru
+#myspell-ru
+#mythes-ru
+#openclipart-libreoffice
+#menu
+#ttf-mscorefonts-installer
+#ttf-staypuft
+#
+### PDF
+## okular
+#okular
+#okular-backend-odp
+#okular-backend-odt
+#okular-extra-backends
+## pdf merge, split, rotate, convert
+#pdfsam
