@@ -30,6 +30,8 @@ echo "deb-src http://ftp.ru.debian.org/debian/ bookworm main non-free non-free-f
 echo "deb http://security.debian.org/debian-security bookworm-security main non-free non-free-firmware" >> /etc/apt/sources.list
 echo "deb-src http://security.debian.org/debian-security bookworm-security main non-free non-free-firmware" >> /etc/apt/sources.list
 
+rm -f /etc/sddm.conf.d/kde_settings.conf
+
 systemctl disable install-flatpaks.service
 rm /etc/systemd/system/install-flatpaks.service
 rm "${0}"
