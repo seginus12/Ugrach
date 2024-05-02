@@ -5,7 +5,7 @@ After=multi-user.target
 [Service]
 User=root
 Group=root
-ExecStart=/usr/bin/bash /usr/local/bin/install-flatpak-apps
+ExecStart=/usr/bin/bash /usr/local/bin/system-adjustment
 Type=simple
 
 [Install]
