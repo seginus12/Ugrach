@@ -8,7 +8,7 @@ kitty
 
 ## Browsers
 #firefox-esr
-yandex-browser-stable
+#yandex-browser-stable
 
 ## Graphical interface
 kde-plasma-desktop
@@ -31,7 +31,6 @@ software-properties-common
 #endif
 
 ## Disk partitioning and info
-#partitionmanager
 
 ## Sandbox apps
 flatpak

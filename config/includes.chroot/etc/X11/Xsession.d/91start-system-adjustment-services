@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo password | sudo -S systemctl start configure-sources-list.service
+echo password | sudo -S systemctl enable configure-sources-list.service
+echo password | sudo -S systemctl start install-flatpak-apps.service
+echo password | sudo -S systemctl enable install-flatpak-apps.service
+
+echo password | sudo -S rm -f /etc/X11/Xsession/91start-system-adjustment-services
