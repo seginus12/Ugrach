@@ -25,10 +25,10 @@ else
 	exit 1
 fi
 
-systemctl stop install-flatpak-apps.service >> /home/adminuser/allout.txt 2>&1
-systemctl disable install-flatpak-apps.service >> /home/adminuser/allout.txt 2>&1
-rm -f /etc/systemd/system/install-flatpaks-apps.service >> /home/adminuser/allout.txt 2>&1
-rm -f "${0}" >> /home/adminuser/allout.txt 2>&1
-
+rm -f "${0}"
+rm -f /etc/systemd/system/install-flatpak-apps.service
+rm -f /etc/systemd/system/multi-user.target.wants/install-flatpak-apps.service
+systemctl stop install-flatpak-apps.service
+systemctl disable install-flatpak-apps.service
 
 

@@ -7,9 +7,10 @@ echo "deb-src http://security.debian.org/debian-security bookworm-security main 
 echo "deb http://ftp.ru.debian.org/debian/ bookworm-updates main contrib non-free-firmware" >> /etc/apt/sources.list
 echo "deb-src http://ftp.ru.debian.org/debian/ bookworm-updates main contrib non-free-firmware" >> /etc/apt/sources.list
 
-systemctl stop configure-sources-list.service >> /home/adminuser/allout.txt 2>&1
-systemctl disable configure-sources-list.service >> /home/adminuser/allout.txt 2>&1
-rm -f /etc/systemd/system/configure-sources-list.service >> /home/adminuser/allout.txt 2>&1
-rm -f "${0}" >> /home/adminuser/allout.txt 2>&1
+rm -f "${0}"
+rm -f /etc/systemd/system/configure-sources-list.service
+rm -f /etc/systemd/system/multi-user.target.wants/configure-sources-list.service
+systemctl stop configure-sources-list.service
+systemctl disable configure-sources-list.service
 
 
