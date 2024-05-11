@@ -1,0 +1,29 @@
+#!/bin/bash
+
+if ping -q -c 1 -W 1 google.com >/dev/null; then
+	sudo dpkg --add-architecture i386 && sudo apt update
+	if lscpu | grep Architecture | grep x86_64; then
+		apt install -y linux-headers-amd64
+	else
+		apt install -y linux-headers-686
+	fi
+	if lspci -nn | grep '\[03[02]' | grep 'NVIDIA'; then
+		apt install -y nvidia-driver firmware-misc-nonfree
+	fi
+	if lspci -nn | grep '\[03[02]' | grep 'AMD'; then
+		apt install -y libglx-mesa0:i386 mesa-vulkan-drivers:i386 libgl1-mesa-dri:i386
+	fi
+	if lspci -nn | grep '\[03[02]' | grep 'Intel'; then
+		apt remove xserver-xorg-video-intel
+	fi
+else
+	exit 1
+fi
+
+rm -f "${0}"
+rm -f /etc/systemd/system/install-drivers.service
+rm -f /etc/systemd/system/multi-user.target.wants/install-drivers.service
+systemctl stop install-drivers.service
+systemctl disable install-drivers.service
+
+

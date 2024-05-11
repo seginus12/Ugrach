@@ -9,6 +9,7 @@ fi
 
 if ! dpkg -s virtualbox-7.0; then
 	exit 1
+fi
 
 rm -f "${0}"
 rm -f /etc/systemd/system/install-virtualbox.service
