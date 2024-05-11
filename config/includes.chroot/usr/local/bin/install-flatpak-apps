@@ -7,23 +7,23 @@ apps=(
 	com.discordapp.Discord
 )
 
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
-for app in "${apps[@]}" 
-do
-	flatpak install -y flathub "$app"
-done
-
 if ping -q -c 1 -W 1 google.com >/dev/null; then
+	flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 	for app in "${apps[@]}" 
 	do
-		if [ $(flatpak list --app --columns=application | tail -n +1 | grep -w -c "$app") -eq 0 ]; then
-			exit 1
-		fi
+		flatpak install -y flathub "$app"
 	done
 else
 	exit 1
 fi
+
+for app in "${apps[@]}" 
+do
+	if [ $(flatpak list --app --columns=application | tail -n +1 | grep -w -c "$app") -eq 0 ]; then
+		exit 1
+	fi
+done
+
 
 rm -f "${0}"
 rm -f /etc/systemd/system/install-flatpak-apps.service

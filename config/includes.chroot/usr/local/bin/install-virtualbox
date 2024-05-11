@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if ping -q -c 1 -W 1 google.com >/dev/null; then
+	apt install linux-headers-$(uname -r) dkms -y
+	apt install virtualbox-7.0 -y
+else
+	exit 1
+fi
+
+if ! dpkg -s virtualbox-7.0; then
+	exit 1
+
+rm -f "${0}"
+rm -f /etc/systemd/system/install-virtualbox.service
+rm -f /etc/systemd/system/multi-user.target.wants/install-virtualbox.service
+systemctl stop install-virtualbox.service
+systemctl disable install-virtualbox.service
+
+
