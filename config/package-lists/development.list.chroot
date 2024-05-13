@@ -1,20 +1,20 @@
 ### Development
 
 ## Code editors and IDEs
-#code
-#pycharm-community
+code
+pycharm-community
 
 ## Version control system
-#git
-#colordiff
-#
-##Python
-#python3-wheel
-#python3-pip
-#python3-venv
-#
-## live-build
-#live-build
-#
-### 3D modeling
-#blender
+git
+colordiff
+
+#Python
+python3-wheel
+python3-pip
+python3-venv
+
+# live-build
+live-build
+
+## 3D modeling
+blender

@@ -8,8 +8,8 @@ konsole
 kitty
 
 ## Browsers
-#firefox-esr
-#yandex-browser-stable
+firefox-esr
+yandex-browser-stable
 
 ## Graphical interface
 kde-plasma-desktop
@@ -35,8 +35,7 @@ flatpak
 plasma-discover-backend-flatpak
 
 ## Messengers
-#discord
-#telegram-desktop
+telegram-desktop
 
 ## Samba and dependencies
 acl
@@ -62,22 +61,22 @@ nfs-common
 
 ## Console utilities
 # Console setup
-#console-setup
-#duf
-#htop
+console-setup
+duf
+htop
 
 ## Torrent programms
-#qbittorrent
+qbittorrent
 
 ## Run windows apps
 # wine
-#wine
-#wine64
-#wine64-preloader
-#wine64-tools
-#winetricks
-#wine-binfmt
-#lutris
+wine
+wine64
+wine64-preloader
+wine64-tools
+winetricks
+wine-binfmt
+lutris
 
 ## Burn ISO files
-#xfburn
+xfburn
