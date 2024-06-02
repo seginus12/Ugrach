@@ -1,0 +1,15 @@
+Origin: USU Repository
+Label: USU
+Suite: stable
+Codename: stable
+Version: 1.0
+Architectures: amd64 arm64 arm7
+Components: main
+Description: An example software repository
+Date: Sun, 02 Jun 2024 18:34:45 +0000
+MD5Sum:
+ 319f47e7d099532ec69af0c10afc73b0 571 main/binary-amd64/Packages
+SHA1:
+ 40892a4e67de9d67bde0a02e201deca0ff115408 571 main/binary-amd64/Packages
+SHA256:
+ 236103c4de4176111fd111a35a7d01e1252afcf48c49bb5c627e7869847176e5 571 main/binary-amd64/Packages

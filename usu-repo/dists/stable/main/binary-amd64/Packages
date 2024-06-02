@@ -1,0 +1,13 @@
+Package: joindomain
+Version: 0.0.1
+Architecture: amd64
+Maintainer: Dmitry Shcherbakov <dmitri.sherbak@gmail.com>
+Depends: acl, attr, samba, samba-common-bin, winbind, libpam-winbind, libnss-winbind, krb5-config, krb5-user, python3-setproctitle, chrony, dnsutils
+Filename: pool/main/joindomain_0.0.1-1_amd64.deb
+Size: 4396
+MD5sum: 81223c1a3e0edf504e2d00b2ea9767d7
+SHA1: 1542a28aceef504137fb66a26ac0d4dd1d1a117e
+SHA256: 55ca858cd21a3c4dcef75104f0372fe90c61c29fe656b69e3d2dee70dba1e374
+Homepage: http://example.com
+Description: Script to join computer to Windows AD domain
+
