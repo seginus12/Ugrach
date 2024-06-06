@@ -1,5 +1,4 @@
 #!/bin/bash
 
 lookandfeeltool -a com.github.yeyushengfan258.We10XOS-light
-echo password | sudo -S rm -f /etc/X11/Xsession/90set-theme
 echo password | sudo -S rm -f /etc/sddm.conf.d/kde_settings.conf

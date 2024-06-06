@@ -12,4 +12,5 @@ echo password | sudo -S systemctl enable install-virtualbox.service
 echo password | sudo -S systemctl start install-drivers.service
 echo password | sudo -S systemctl enable install-drivers.service
 
-echo password | sudo -S rm -f /etc/X11/Xsession/91start-system-adjustment-services
+echo password | sudo -S rm -f /etc/X11/Xsession.d/91start-system-adjustment-services
+echo password | sudo -S rm -f /etc/X11/Xsession.d/90set-theme

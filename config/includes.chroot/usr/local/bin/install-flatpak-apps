@@ -4,7 +4,6 @@ apps=(
 	com.usebottles.bottles
 	com.bitwarden.desktop
 	com.getpostman.Postman
-	com.discordapp.Discord
 )
 
 if ping -q -c 1 -W 1 google.com >/dev/null; then
