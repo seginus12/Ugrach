@@ -1,5 +1,5 @@
 [Unit]
-Description=Install VirtualBox
+Description=Install GPU drivers
 After=multi-user.target
 
 [Service]

@@ -1,11 +1,11 @@
 [Unit]
-Description=Configure /etc/apt/sources.list
+Description=Install Kyocera driver
 After=multi-user.target
 
 [Service]
 User=root
 Group=root
-ExecStart=/usr/bin/bash /usr/local/bin/configure-sources-list
+ExecStart=/usr/bin/bash /usr/local/bin/install-kyocera-driver
 Type=simple
 
 [Install]

@@ -83,3 +83,13 @@ xfburn
 
 ## Working with archives
 ark
+
+## Printing services
+printer-driver-all
+cups
+system-config-printer
+system-config-printer-common
+
+## Mail
+# Mail client
+thunderbird

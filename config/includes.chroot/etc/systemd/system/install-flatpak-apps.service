@@ -1,5 +1,5 @@
 [Unit]
-Description=Install flatpak apps
+Description=Install Flatpak apps
 After=multi-user.target
 
 [Service]

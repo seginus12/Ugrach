@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if ping -q -c 1 -W 1 google.com >/dev/null; then
+	mkdir driver
+	curl https://www.kyoceradocumentsolutions.ru/content/download-center/ru/drivers/all/Linux_Universal_Driver_zip.download.zip --output driver.zip
+	unzip driver.zip
+	tar -zxf KyoceraLinuxPackages-20230720.tar.gz -C ./driver
+	cd driver/Debian/Global/kyodialog_amd64/
+	apt install -y -f ./kyodialog_9.3-0_amd64.deb
+	cd ../../../../
+	rm -fr driver
+	rm -f KyoceraLinuxPackages-20230720.tar.gz
+	ls -la
+else
+	exit 1
+fi
+
+rm -f "${0}"
+rm -f /etc/systemd/system/install-kyocera-driver.service
+rm -f /etc/systemd/system/multi-user.target.wants/install-kyocera-driver.service
+systemctl stop install-kyocera-driver.service
+systemctl disable install-kyocera-driver.service
+
+
